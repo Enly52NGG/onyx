@@ -54,11 +54,7 @@ export function DocumentPageContent({ doc }: { doc: LegalDocument }) {
               {meta.title}
             </h1>
             <p className="text-[#929292] text-sm leading-relaxed mb-4">{meta.description}</p>
-            <div className="text-xs text-[#929292] space-y-1">
-              <div>
-                {t("source")}: {doc.sourceFile}
-              </div>
-            </div>
+
             <DocumentActions slug={doc.slug} title={meta.title} />
           </header>
 
