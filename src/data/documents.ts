@@ -1,6 +1,6 @@
 import { LegalDocument } from "@/lib/types";
 
-/** Законодательная база с forum.rmrp.ru + правила проекта */
+/** Законодательная база с  + правила проекта */
 export const documents: LegalDocument[] = [
   {
     id: "server-rules",
@@ -10,7 +10,7 @@ export const documents: LegalDocument[] = [
     category: "server_rules",
     description: "Правила общения, RP-термины, внешний вид, голосовой чат и специальные нарушения проекта ONYX RP.",
     status: "requires_review" as const,
-    sourceFile: "Исходные материалы ONYX RP",
+    sourceFile: "",
     sections: [
       {
         id: "notice",
@@ -28,9 +28,9 @@ export const documents: LegalDocument[] = [
     title: `Конституция Российской Федерации`,
     shortTitle: `Конституция`,
     category: "constitution",
-    description: `Основы конституционного строя, права и свободы (RMRP).`,
+    description: `Основы конституционного строя, права и свободы.`,
     status: "requires_review" as const,
-    sourceFile: `forum.rmrp.ru — Конституция`,
+    sourceFile: ``,
     sections: [
       {
         id: "ch-9",
@@ -268,9 +268,9 @@ export const documents: LegalDocument[] = [
     title: `Уголовный кодекс Российской Федерации`,
     shortTitle: `УК РФ`,
     category: "criminal_code",
-    description: `Преступления и наказания (RMRP).`,
+    description: `Преступления и наказания.`,
     status: "requires_review" as const,
-    sourceFile: `forum.rmrp.ru — УК РФ`,
+    sourceFile: ``,
     sections: [
       {
         id: "ch-1",
@@ -960,9 +960,9 @@ export const documents: LegalDocument[] = [
     title: `Кодекс об административных правонарушениях Российской Федерации`,
     shortTitle: `КоАП РФ`,
     category: "admin_code",
-    description: `Административные правонарушения (RMRP).`,
+    description: `Административные правонарушения.`,
     status: "requires_review" as const,
-    sourceFile: `forum.rmrp.ru — КоАП РФ`,
+    sourceFile: ``,
     sections: [
       {
         id: "ch-1",
@@ -1323,9 +1323,9 @@ export const documents: LegalDocument[] = [
     title: `Процессуальный кодекс Российской Федерации`,
     shortTitle: `УПК РФ`,
     category: "procedure",
-    description: `Процессуальный порядок (RMRP).`,
+    description: `Процессуальный порядок.`,
     status: "requires_review" as const,
-    sourceFile: `forum.rmrp.ru — УПК РФ`,
+    sourceFile: ``,
     sections: [
       {
         id: "ch-8",
@@ -1541,9 +1541,9 @@ export const documents: LegalDocument[] = [
     title: `Трудовой кодекс Российской Федерации`,
     shortTitle: `ТК РФ`,
     category: "labor",
-    description: `Трудовые отношения (RMRP).`,
+    description: `Трудовые отношения.`,
     status: "requires_review" as const,
-    sourceFile: `forum.rmrp.ru — ТК РФ`,
+    sourceFile: ``,
     sections: [
       {
         id: "ch-1",
@@ -1819,9 +1819,9 @@ export const documents: LegalDocument[] = [
     title: `ФКЗ «О судебной системе» № 64-ФКЗ`,
     shortTitle: `ФКЗ — Судебная система`,
     category: "judiciary",
-    description: `Судебная система (RMRP).`,
+    description: `Судебная система.`,
     status: "requires_review" as const,
-    sourceFile: `forum.rmrp.ru — ФКЗ № 64`,
+    sourceFile: ``,
     sections: [
       {
         id: "ch-9",
@@ -2119,9 +2119,9 @@ export const documents: LegalDocument[] = [
     title: `Бюджетный кодекс Российской Федерации`,
     shortTitle: `БК РФ`,
     category: "budget",
-    description: `Бюджетный кодекс (RMRP).`,
+    description: `Бюджетный кодекс.`,
     status: "requires_review" as const,
-    sourceFile: `forum.rmrp.ru — БК РФ`,
+    sourceFile: ``,
     sections: [
       {
         id: "ch-1",
@@ -2445,9 +2445,9 @@ export const documents: LegalDocument[] = [
     title: `ФКЗ «О Правительстве» № 2-ФКЗ`,
     shortTitle: `ФКЗ — Правительство`,
     category: "government",
-    description: `Правительство РФ (RMRP).`,
+    description: `Правительство РФ.`,
     status: "requires_review" as const,
-    sourceFile: `forum.rmrp.ru — ФКЗ № 2`,
+    sourceFile: ``,
     sections: [
       {
         id: "ch-9",
@@ -2677,9 +2677,9 @@ export const documents: LegalDocument[] = [
     title: `ФКЗ «Об особых правовых режимах» № 28-ФКЗ`,
     shortTitle: `ФКЗ — Особые режимы`,
     category: "special_regimes",
-    description: `Особые правовые режимы (RMRP).`,
+    description: `Особые правовые режимы.`,
     status: "requires_review" as const,
-    sourceFile: `forum.rmrp.ru — ФКЗ № 28`,
+    sourceFile: ``,
     sections: [
       {
         id: "ch-9",
@@ -2929,7 +2929,7 @@ export const documents: LegalDocument[] = [
                 
 				
 					
-						Скачать лаунчер RMRP
+						Скачать лаунчер
 					
 				
 				
@@ -2937,7 +2937,7 @@ export const documents: LegalDocument[] = [
 						CRMP
 					
 				
-				Copyright 2024 RMRP
+				Copyright 2024
 			
             
 				
@@ -3060,9 +3060,9 @@ export const documents: LegalDocument[] = [
     title: `ФЗ «О государственной собственности…» № 86-ФЗ`,
     shortTitle: `ФЗ — Госсобственность`,
     category: "state_property",
-    description: `Госсобственность и охраняемые территории (RMRP).`,
+    description: `Госсобственность и охраняемые территории.`,
     status: "requires_review" as const,
-    sourceFile: `forum.rmrp.ru — ФЗ № 86`,
+    sourceFile: ``,
     sections: [
       {
         id: "ch-9",
@@ -3332,9 +3332,9 @@ Andrey_Brazov, oHLurk, Undying и ещё 2` }
     title: `ФЗ «О документообороте» № 42-ФЗ`,
     shortTitle: `ФЗ — Документооборот`,
     category: "document_flow",
-    description: `Документооборот (RMRP).`,
+    description: `Документооборот.`,
     status: "requires_review" as const,
-    sourceFile: `forum.rmrp.ru — ФЗ № 42`,
+    sourceFile: ``,
     sections: [
       {
         id: "ch-8",
@@ -3566,9 +3566,9 @@ Roman_Rebrov, Гордей Гусин и Ilya Poltanov` }
     title: `ФЗ «О государственной службе» № 54-ФЗ`,
     shortTitle: `ФЗ — Госслужба`,
     category: "civil_service",
-    description: `Государственная служба (RMRP).`,
+    description: `Государственная служба.`,
     status: "requires_review" as const,
-    sourceFile: `forum.rmrp.ru — ФЗ № 54`,
+    sourceFile: ``,
     sections: [
       {
         id: "ch-6",
@@ -3809,9 +3809,9 @@ Ilya_Lukin, ГРО3НЫЙ, Tr1x 3.16 и ещё 1 человек` }
     title: `ФЗ «О Федеральной службе безопасности» № 78-ФЗ (ФСБ)`,
     shortTitle: `ФЗ — ФСБ`,
     category: "fsb",
-    description: `ФСБ (RMRP).`,
+    description: `ФСБ.`,
     status: "requires_review" as const,
-    sourceFile: `forum.rmrp.ru — ФЗ № 78`,
+    sourceFile: ``,
     sections: [
       {
         id: "ch-9",
@@ -4009,9 +4009,9 @@ Ilya_Lukin, ГРО3НЫЙ, Tr1x 3.16 и ещё 1 человек` }
     title: `ФЗ «Об оружии» № 34-ФЗ`,
     shortTitle: `ФЗ — Оружие`,
     category: "weapons",
-    description: `Оборот оружия (RMRP).`,
+    description: `Оборот оружия.`,
     status: "requires_review" as const,
-    sourceFile: `forum.rmrp.ru — ФЗ № 34`,
+    sourceFile: ``,
     sections: [
       {
         id: "ch-8",
@@ -4131,9 +4131,9 @@ Ilya_Lukin, ГРО3НЫЙ, Tr1x 3.16 и ещё 1 человек` }
     title: `ФЗ «О полиции» № 74-ФЗ`,
     shortTitle: `ФЗ — Полиция`,
     category: "police",
-    description: `Полиция (RMRP).`,
+    description: `Полиция.`,
     status: "requires_review" as const,
-    sourceFile: `forum.rmrp.ru — ФЗ № 74`,
+    sourceFile: ``,
     sections: [
       {
         id: "ch-9",
@@ -4295,9 +4295,9 @@ pandyss, SSepka, Михаил Фьюри и ещё 12` }
     title: `ФЗ «О прокуратуре» № 14-ФЗ`,
     shortTitle: `ФЗ — Прокуратура`,
     category: "prosecutor",
-    description: `Прокуратура (RMRP).`,
+    description: `Прокуратура.`,
     status: "requires_review" as const,
-    sourceFile: `forum.rmrp.ru — ФЗ № 14`,
+    sourceFile: ``,
     sections: [
       {
         id: "ch-8",
@@ -4572,9 +4572,9 @@ pandyss, SSepka, Михаил Фьюри и ещё 12` }
     title: `ФЗ «О Федеральной службе охраны» № 22-ФЗ (ФСО)`,
     shortTitle: `ФЗ — ФСО`,
     category: "fso",
-    description: `ФСО (RMRP).`,
+    description: `ФСО.`,
     status: "requires_review" as const,
-    sourceFile: `forum.rmrp.ru — ФЗ № 22`,
+    sourceFile: ``,
     sections: [
       {
         id: "ch-9",
@@ -4757,9 +4757,9 @@ pandyss, SSepka, Михаил Фьюри и ещё 12` }
     title: `ФЗ «Правила дорожного движения» № 90-ФЗ`,
     shortTitle: `ФЗ — ПДД`,
     category: "traffic",
-    description: `ПДД (RMRP).`,
+    description: `ПДД.`,
     status: "requires_review" as const,
-    sourceFile: `forum.rmrp.ru — ФЗ № 90`,
+    sourceFile: ``,
     sections: [
       {
         id: "ch-8",
@@ -5070,9 +5070,9 @@ pandyss, SSepka, Михаил Фьюри и ещё 12` }
     title: `ФЗ «О государственной тайне» № 10-ФЗ`,
     shortTitle: `ФЗ — Гостайна`,
     category: "state_secret",
-    description: `Государственная тайна (RMRP).`,
+    description: `Государственная тайна.`,
     status: "requires_review" as const,
-    sourceFile: `forum.rmrp.ru — ФЗ № 10`,
+    sourceFile: ``,
     sections: [
       {
         id: "ch-9",
@@ -5207,9 +5207,9 @@ pandyss, SSepka, Михаил Фьюри и ещё 12` }
     title: `ФЗ «О средствах массовой информации»`,
     shortTitle: `ФЗ — СМИ`,
     category: "mass_media",
-    description: `СМИ (RMRP).`,
+    description: `СМИ.`,
     status: "requires_review" as const,
-    sourceFile: `forum.rmrp.ru — ФЗ о СМИ`,
+    sourceFile: ``,
     sections: [
       {
         id: "ch-2",
@@ -5303,9 +5303,9 @@ pandyss, SSepka, Михаил Фьюри и ещё 12` }
     title: `ФЗ «О коммерческой деятельности» № 12-ФЗ`,
     shortTitle: `ФЗ — Коммерция`,
     category: "commercial",
-    description: `Коммерческая деятельность (RMRP).`,
+    description: `Коммерческая деятельность.`,
     status: "requires_review" as const,
-    sourceFile: `forum.rmrp.ru — ФЗ № 12`,
+    sourceFile: ``,
     sections: [
       {
         id: "ch-0",
@@ -5394,9 +5394,9 @@ pandyss, SSepka, Михаил Фьюри и ещё 12` }
     title: `ФЗ «Об охране здоровья» № 29-ФЗ`,
     shortTitle: `ФЗ — Здравоохранение`,
     category: "health",
-    description: `Охрана здоровья (RMRP).`,
+    description: `Охрана здоровья.`,
     status: "requires_review" as const,
-    sourceFile: `forum.rmrp.ru — ФЗ № 29`,
+    sourceFile: ``,
     sections: [
       {
         id: "ch-2",
@@ -5639,9 +5639,9 @@ pandyss, SSepka, Михаил Фьюри и ещё 12` }
     title: `ФЗ «Об организации дорожного движения» № 99-ФЗ`,
     shortTitle: `ФЗ — Организация ДД`,
     category: "road_org",
-    description: `Организация ДД (RMRP).`,
+    description: `Организация ДД.`,
     status: "requires_review" as const,
-    sourceFile: `forum.rmrp.ru — ФЗ № 99`,
+    sourceFile: ``,
     sections: [
       {
         id: "ch-9",
@@ -5810,9 +5810,9 @@ pandyss, SSepka, Михаил Фьюри и ещё 12` }
     title: `ФЗ «Об адвокатской деятельности и адвокатуре» № 50-ФЗ`,
     shortTitle: `ФЗ — Адвокатура`,
     category: "advocacy",
-    description: `Адвокатура (RMRP).`,
+    description: `Адвокатура.`,
     status: "requires_review" as const,
-    sourceFile: `forum.rmrp.ru — ФЗ № 50`,
+    sourceFile: ``,
     sections: [
       {
         id: "ch-9",
@@ -6013,9 +6013,9 @@ pandyss, SSepka, Михаил Фьюри и ещё 12` }
     title: `ФЗ «Об учреждениях и органах исполнения уголовных наказаний» № 66-ФЗ`,
     shortTitle: `ФЗ — УИН`,
     category: "penal",
-    description: `Исполнение наказаний (RMRP).`,
+    description: `Исполнение наказаний.`,
     status: "requires_review" as const,
-    sourceFile: `forum.rmrp.ru — ФЗ № 66`,
+    sourceFile: ``,
     sections: [
       {
         id: "ch-9",
@@ -6202,9 +6202,9 @@ Jackpot, Михаил Фьюри, Виктор Калинин и ещё 14` }
     title: `ФЗ «О Следственном комитете» № 88-ФЗ`,
     shortTitle: `ФЗ — СК`,
     category: "investigative",
-    description: `Следственный комитет (RMRP).`,
+    description: `Следственный комитет.`,
     status: "requires_review" as const,
-    sourceFile: `forum.rmrp.ru — ФЗ № 88`,
+    sourceFile: ``,
     sections: [
       {
         id: "ch-9",
@@ -6394,9 +6394,9 @@ Ivan Petrov, Егор Прайд, Фома Семенов и ещё 6` }
     title: `ФЗ «О воздушном пространстве» № 95-ФЗ`,
     shortTitle: `ФЗ — Воздушное пространство`,
     category: "airspace",
-    description: `Воздушное пространство (RMRP).`,
+    description: `Воздушное пространство.`,
     status: "requires_review" as const,
-    sourceFile: `forum.rmrp.ru — ФЗ № 95`,
+    sourceFile: ``,
     sections: [
       {
         id: "ch-2",

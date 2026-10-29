@@ -1,12 +1,12 @@
 import { CategoryInfo } from '@/lib/types';
 
 export const categories: CategoryInfo[] = [
-  { id: 'constitution', title: 'Конституция РФ', description: 'Основы конституционного строя (RMRP)', icon: 'Landmark' },
-  { id: 'criminal_code', title: 'Уголовный кодекс', description: 'Преступления и наказания (RMRP)', icon: 'Scale' },
-  { id: 'admin_code', title: 'Административный кодекс', description: 'Административные правонарушения (RMRP)', icon: 'FileWarning' },
-  { id: 'procedure', title: 'Процессуальный кодекс', description: 'Процессуальный порядок (RMRP)', icon: 'Gavel' },
-  { id: 'labor', title: 'Трудовой кодекс', description: 'Трудовые отношения (RMRP)', icon: 'Briefcase' },
-  { id: 'budget', title: 'Бюджетный кодекс', description: 'Бюджетное устройство (RMRP)', icon: 'File' },
+  { id: 'constitution', title: 'Конституция РФ', description: 'Основы конституционного строя', icon: 'Landmark' },
+  { id: 'criminal_code', title: 'Уголовный кодекс', description: 'Преступления и наказания', icon: 'Scale' },
+  { id: 'admin_code', title: 'Административный кодекс', description: 'Административные правонарушения', icon: 'FileWarning' },
+  { id: 'procedure', title: 'Процессуальный кодекс', description: 'Процессуальный порядок', icon: 'Gavel' },
+  { id: 'labor', title: 'Трудовой кодекс', description: 'Трудовые отношения', icon: 'Briefcase' },
+  { id: 'budget', title: 'Бюджетный кодекс', description: 'Бюджетное устройство', icon: 'File' },
   { id: 'government', title: 'ФКЗ — Правительство', description: 'ФКЗ «О Правительстве» № 2-ФКЗ', icon: 'Building2' },
   { id: 'judiciary', title: 'ФКЗ — Судебная система', description: 'ФКЗ «О судебной системе» № 64-ФКЗ', icon: 'Scale' },
   { id: 'special_regimes', title: 'ФКЗ — Особые режимы', description: 'ФКЗ № 28-ФКЗ', icon: 'Shield' },
