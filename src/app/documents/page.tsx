@@ -71,8 +71,7 @@ function DocumentsContent() {
                   {doc.status === "requires_review" ? t("statusRequiresReview") : t("active")}
                 </span>
                 <span className="text-xs text-[#929292]">
-                  {t("source")}: {doc.sourceFile}
-                </span>
+</span>
               </div>
               <h2 className="font-medium text-[#F2F2F2] mb-1">{localizeDocumentMeta(doc.slug, doc.title, doc.shortTitle, doc.description, locale).title}</h2>
               <p className="text-sm text-[#929292] line-clamp-2">{localizeDocumentMeta(doc.slug, doc.title, doc.shortTitle, doc.description, locale).description}</p>
