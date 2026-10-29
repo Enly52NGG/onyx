@@ -7,14 +7,28 @@ export type DocumentCategory =
   | 'procedure'
   | 'constitution'
   | 'labor'
+  | 'budget'
   | 'government'
   | 'judiciary'
+  | 'special_regimes'
+  | 'state_property'
+  | 'document_flow'
   | 'civil_service'
   | 'fsb'
   | 'weapons'
   | 'police'
   | 'prosecutor'
   | 'fso'
+  | 'traffic'
+  | 'state_secret'
+  | 'mass_media'
+  | 'commercial'
+  | 'health'
+  | 'road_org'
+  | 'advocacy'
+  | 'penal'
+  | 'investigative'
+  | 'airspace'
   | 'other';
 
 export interface Article {
@@ -49,11 +63,11 @@ export interface LegalDocument {
   adopted?: string;
   sections: Section[];
   related?: string[];
-  tags: string[];
+  tags?: string[];
 }
 
 export interface CategoryInfo {
-  id: DocumentCategory;
+  id: DocumentCategory | string;
   title: string;
   description: string;
   icon: string;
