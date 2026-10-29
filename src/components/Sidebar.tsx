@@ -27,7 +27,7 @@ export function Sidebar() {
     { href: "/search", label: t("search"), icon: IconSearch, external: false },
     { href: "/about", label: t("about"), icon: IconInfo, external: false },
     {
-      href: "https://discord.gg/W4rqqX3HSK",
+      href: "https://discord.gg/WJGhRMNxe3",
       label: t("discord"),
       icon: IconDiscord,
       external: true,
