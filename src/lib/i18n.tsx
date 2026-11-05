@@ -26,7 +26,7 @@ const translations = {
     importantNotice: "Важное уведомление",
     noticeText:
       "Портал публикует правила и нормативные документы проекта ONYX RP. Документы могут обновляться администрацией.",
-    lastUpdate: "Последнее обновление базы: на основе предоставленных исходных файлов. Версия каталога: 1.0",
+    lastUpdate: "Последнее обновление базы: на основе предоставленных исходных файлов. Версия каталога: 1.2",
     allDocuments: "Законодательство",
     catalogDescription:
       "Каталог нормативных актов и правил проекта.",
@@ -53,7 +53,7 @@ const translations = {
     aboutPrinciples: "Принципы",
     aboutVersion: "Версия",
     backHome: "← На главную",
-    docBase: "База документов v1.0",
+    docBase: "База документов v1.2",
     statusLabel: "",
     chapter: "Глава",
     sanction: "Санкция",
@@ -111,7 +111,7 @@ const translations = {
     aboutPrinciples: "Принципи",
     aboutVersion: "Версія",
     backHome: "← На головну",
-    docBase: "База документів v1.0",
+    docBase: "База документів v1.2",
     statusLabel: "",
     chapter: "Глава",
     sanction: "Санкція",
