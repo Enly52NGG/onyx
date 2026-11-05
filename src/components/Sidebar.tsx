@@ -133,7 +133,6 @@ export function Sidebar() {
 
       <div className="px-5 py-4 border-t border-[#292929] text-xs text-[#929292]">
         <div>{t("docBase")}</div>
-        <div className="mt-1">{t("statusLabel")}</div>
       </div>
     </>
   );
