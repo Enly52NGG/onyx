@@ -67,11 +67,6 @@ function DocumentsContent() {
                 <span className="text-xs px-2 py-0.5 rounded bg-[#1C1C1C] text-[#B9A16B] border border-[#292929]">
                   {localizeCategory(doc.category, categoryMap[doc.category]?.title || doc.category, '', locale).title}
                 </span>
-                <span className="text-xs text-[#929292]">
-                  {doc.status === "requires_review" ? t("statusRequiresReview") : t("active")}
-                </span>
-                <span className="text-xs text-[#929292]">
-</span>
               </div>
               <h2 className="font-medium text-[#F2F2F2] mb-1">{localizeDocumentMeta(doc.slug, doc.title, doc.shortTitle, doc.description, locale).title}</h2>
               <p className="text-sm text-[#929292] line-clamp-2">{localizeDocumentMeta(doc.slug, doc.title, doc.shortTitle, doc.description, locale).description}</p>
