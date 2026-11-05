@@ -46,9 +46,6 @@ export function DocumentPageContent({ doc }: { doc: LegalDocument }) {
               <span className="text-xs px-2 py-0.5 rounded bg-[#1C1C1C] text-[#B9A16B] border border-[#292929]">
                 {catLoc.title}
               </span>
-              <span className="text-xs px-2 py-0.5 rounded bg-[#151515] text-[#929292] border border-[#292929]">
-                {doc.status === "requires_review" ? t("statusRequiresReview") : t("active")}
-              </span>
             </div>
             <h1 className="text-2xl lg:text-3xl font-semibold text-[#F2F2F2] mb-3">
               {meta.title}
@@ -80,11 +77,15 @@ export function DocumentPageContent({ doc }: { doc: LegalDocument }) {
                           <span className="text-[#B9A16B]">{art.number}.</span> {art.title}
                         </h3>
                       </div>
-                      <p className="text-sm text-[#929292] leading-relaxed">{art.content}</p>
+                      <div className="text-sm text-[#929292] leading-relaxed whitespace-pre-line space-y-2">
+                        {art.content}
+                      </div>
                       {art.sanctions && (
-                        <div className="mt-3 pt-3 border-t border-[#292929]">
-                          <span className="text-xs text-[#929292]">{t("sanction")}: </span>
-                          <span className="text-sm text-[#B9A16B]">{art.sanctions}</span>
+                        <div className="mt-3 pt-3 border-t border-[#292929] flex flex-wrap gap-2 items-start">
+                          <span className="text-xs uppercase tracking-wide text-[#929292] shrink-0 pt-0.5">
+                            {t("sanction")}
+                          </span>
+                          <span className="text-sm text-[#B9A16B] whitespace-pre-line">{art.sanctions}</span>
                         </div>
                       )}
                     </article>
