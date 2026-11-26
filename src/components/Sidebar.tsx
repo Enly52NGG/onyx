@@ -155,7 +155,7 @@ export function Sidebar() {
       )}
 
       <aside
-        className={`mobile-drawer lg:hidden fixed inset-y-0 left-0 z-50 w-72 bg-[#122036] border-r border-[#1E2F4A] flex flex-col transform ${
+        className={`mobile-drawer glass lg:hidden fixed inset-y-0 left-0 z-50 w-72 flex flex-col transform ${
           open ? "translate-x-0" : "-translate-x-full"
         }`}
       >
@@ -168,7 +168,7 @@ export function Sidebar() {
         <NavContent />
       </aside>
 
-      <aside className="hidden lg:flex w-64 shrink-0 bg-[#122036] border-r border-[#1E2F4A] flex-col sticky top-0 h-screen">
+      <aside className="glass hidden lg:flex w-64 shrink-0 flex-col sticky top-0 h-screen">
         <NavContent />
       </aside>
     </>
