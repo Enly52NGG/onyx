@@ -21,14 +21,14 @@ export function DocumentActions({ slug }: { slug: string; title?: string }) {
     <div className="flex flex-wrap gap-3 mt-4 no-print">
       <button
         onClick={copyLink}
-        className="inline-flex items-center gap-2 px-3 py-1.5 text-sm rounded-lg bg-[#151515] border border-[#292929] text-[#929292] hover:text-[#B9A16B] hover:border-[#B9A16B]/40 transition"
+        className="inline-flex items-center gap-2 px-3 py-1.5 text-sm rounded-lg bg-[#16253D] border border-[#1E2F4A] text-[#CACBD2] hover:text-[#2965B3] hover:border-[#2965B3]/40 transition"
       >
         <IconCopy size={16} />
         {t("copyLink")}
       </button>
       <button
         onClick={printDoc}
-        className="inline-flex items-center gap-2 px-3 py-1.5 text-sm rounded-lg bg-[#151515] border border-[#292929] text-[#929292] hover:text-[#B9A16B] hover:border-[#B9A16B]/40 transition"
+        className="inline-flex items-center gap-2 px-3 py-1.5 text-sm rounded-lg bg-[#16253D] border border-[#1E2F4A] text-[#CACBD2] hover:text-[#2965B3] hover:border-[#2965B3]/40 transition"
       >
         <IconPrint size={16} />
         {t("print")}

@@ -36,17 +36,17 @@ export function Sidebar() {
 
   const NavContent = () => (
     <>
-      <div className="px-5 py-6 border-b border-[#292929]">
+      <div className="px-5 py-6 border-b border-[#1E2F4A]">
         <Link href="/" className="flex items-center gap-3 group" onClick={() => setOpen(false)}>
-          <div className="w-10 h-10 rounded-lg bg-[#151515] border border-[#292929] overflow-hidden shrink-0">
+          <div className="w-10 h-10 rounded-lg bg-[#16253D] border border-[#1E2F4A] overflow-hidden shrink-0">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/logo.png" alt="NEVA RP" className="w-full h-full object-cover" />
+            <img src="/logo.png" alt="NEVA Role Play" className="w-full h-full object-cover" />
           </div>
           <div>
-            <div className="font-semibold text-[#F2F2F2] tracking-wide group-hover:text-[#B9A16B] transition-colors">
-              ONYX RP
+            <div className="font-semibold text-[#F7F7F8] tracking-wide group-hover:text-[#2965B3] transition-colors">
+              NEVA Role Play
             </div>
-            <div className="text-xs text-[#929292]">{t("portalSubtitle")}</div>
+            <div className="text-xs text-[#CACBD2]">{t("portalSubtitle")}</div>
           </div>
         </Link>
       </div>
@@ -71,8 +71,8 @@ export function Sidebar() {
           const Icon = item.icon;
           const className = `flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm transition-all ${
             active
-              ? "bg-[#1C1C1C] text-[#B9A16B] border border-[#292929]"
-              : "text-[#929292] hover:text-[#F2F2F2] hover:bg-[#151515]"
+              ? "bg-[#16253D] text-[#2965B3] border border-[#1E2F4A]"
+              : "text-[#CACBD2] hover:text-[#F7F7F8] hover:bg-[#16253D]"
           }`;
           if (item.external) {
             return (
@@ -96,23 +96,23 @@ export function Sidebar() {
               onClick={() => setOpen(false)}
               className={className}
             >
-              <Icon size={18} className={active ? "text-[#B9A16B]" : ""} />
+              <Icon size={18} className={active ? "text-[#2965B3]" : ""} />
               <span>{item.label}</span>
             </Link>
           );
         })}
       </nav>
 
-      <div className="px-5 py-3 border-t border-[#292929]">
-        <div className="text-xs text-[#929292] mb-2">{t("language")}</div>
+      <div className="px-5 py-3 border-t border-[#1E2F4A]">
+        <div className="text-xs text-[#CACBD2] mb-2">{t("language")}</div>
         <div className="flex gap-2">
           <button
             type="button"
             onClick={() => setLocale("ru")}
             className={`flex-1 py-1.5 text-xs rounded-lg border transition ${
               locale === "ru"
-                ? "bg-[#1C1C1C] border-[#B9A16B] text-[#B9A16B]"
-                : "bg-[#151515] border-[#292929] text-[#929292] hover:text-[#F2F2F2]"
+                ? "bg-[#16253D] border-[#2965B3] text-[#2965B3]"
+                : "bg-[#16253D] border-[#1E2F4A] text-[#CACBD2] hover:text-[#F7F7F8]"
             }`}
           >
             Русский
@@ -122,8 +122,8 @@ export function Sidebar() {
             onClick={() => setLocale("uk")}
             className={`flex-1 py-1.5 text-xs rounded-lg border transition ${
               locale === "uk"
-                ? "bg-[#1C1C1C] border-[#B9A16B] text-[#B9A16B]"
-                : "bg-[#151515] border-[#292929] text-[#929292] hover:text-[#F2F2F2]"
+                ? "bg-[#16253D] border-[#2965B3] text-[#2965B3]"
+                : "bg-[#16253D] border-[#1E2F4A] text-[#CACBD2] hover:text-[#F7F7F8]"
             }`}
           >
             Українська
@@ -131,7 +131,7 @@ export function Sidebar() {
         </div>
       </div>
 
-      <div className="px-5 py-4 border-t border-[#292929] text-xs text-[#929292]">
+      <div className="px-5 py-4 border-t border-[#1E2F4A] text-xs text-[#CACBD2]">
         <div>{t("docBase")}</div>
       </div>
     </>
@@ -141,7 +141,7 @@ export function Sidebar() {
     <>
       <button
         onClick={() => setOpen(true)}
-        className="lg:hidden fixed top-4 left-4 z-40 p-2 rounded-lg bg-[#151515] border border-[#292929] text-[#F2F2F2]"
+        className="lg:hidden fixed top-4 left-4 z-40 p-2 rounded-lg bg-[#16253D] border border-[#1E2F4A] text-[#F7F7F8]"
         aria-label="Menu"
       >
         <IconMenu size={20} />
@@ -155,20 +155,20 @@ export function Sidebar() {
       )}
 
       <aside
-        className={`lg:hidden fixed inset-y-0 left-0 z-50 w-72 bg-[#101010] border-r border-[#292929] flex flex-col transform transition-transform duration-200 ${
+        className={`lg:hidden fixed inset-y-0 left-0 z-50 w-72 bg-[#122036] border-r border-[#1E2F4A] flex flex-col transform transition-transform duration-200 ${
           open ? "translate-x-0" : "-translate-x-full"
         }`}
       >
         <button
           onClick={() => setOpen(false)}
-          className="absolute top-4 right-4 p-1 text-[#929292] hover:text-[#F2F2F2]"
+          className="absolute top-4 right-4 p-1 text-[#CACBD2] hover:text-[#F7F7F8]"
         >
           <IconX size={20} />
         </button>
         <NavContent />
       </aside>
 
-      <aside className="hidden lg:flex w-64 shrink-0 bg-[#101010] border-r border-[#292929] flex-col sticky top-0 h-screen">
+      <aside className="hidden lg:flex w-64 shrink-0 bg-[#122036] border-r border-[#1E2F4A] flex-col sticky top-0 h-screen">
         <NavContent />
       </aside>
     </>
