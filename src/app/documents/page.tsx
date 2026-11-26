@@ -20,8 +20,8 @@ function DocumentsContent() {
   return (
     <div className="max-w-5xl mx-auto px-6 py-10 lg:py-14">
       <div className="mb-8">
-        <h1 className="text-2xl font-semibold text-[#F2F2F2] mb-2">{t("allDocuments")}</h1>
-        <p className="text-[#929292] text-sm">{t("catalogDescription")}</p>
+        <h1 className="text-2xl font-semibold text-[#F7F7F8] mb-2">{t("allDocuments")}</h1>
+        <p className="text-[#CACBD2] text-sm">{t("catalogDescription")}</p>
       </div>
 
       <div className="flex flex-wrap gap-2 mb-8">
@@ -29,8 +29,8 @@ function DocumentsContent() {
           href="/documents"
           className={`px-3 py-1.5 rounded-lg text-sm border transition ${
             !category
-              ? "bg-[#1C1C1C] border-[#B9A16B] text-[#B9A16B]"
-              : "bg-[#151515] border-[#292929] text-[#929292] hover:text-[#F2F2F2]"
+              ? "bg-[#16253D] border-[#2965B3] text-[#2965B3]"
+              : "bg-[#16253D] border-[#1E2F4A] text-[#CACBD2] hover:text-[#F7F7F8]"
           }`}
         >
           {t("all")}
@@ -41,8 +41,8 @@ function DocumentsContent() {
             href={`/documents?category=${cat.id}`}
             className={`px-3 py-1.5 rounded-lg text-sm border transition ${
               category === cat.id
-                ? "bg-[#1C1C1C] border-[#B9A16B] text-[#B9A16B]"
-                : "bg-[#151515] border-[#292929] text-[#929292] hover:text-[#F2F2F2]"
+                ? "bg-[#16253D] border-[#2965B3] text-[#2965B3]"
+                : "bg-[#16253D] border-[#1E2F4A] text-[#CACBD2] hover:text-[#F7F7F8]"
             }`}
           >
             {localizeCategory(cat.id, cat.title, cat.description, locale).title}
@@ -51,7 +51,7 @@ function DocumentsContent() {
       </div>
 
       {filtered.length === 0 ? (
-        <div className="text-center py-16 text-[#929292]">
+        <div className="text-center py-16 text-[#CACBD2]">
           <p>{t("noDocsInCategory")}</p>
           <p className="text-sm mt-2">{t("materialsMayBeAdded")}</p>
         </div>
@@ -61,16 +61,16 @@ function DocumentsContent() {
             <Link
               key={doc.id}
               href={`/documents/${doc.slug}`}
-              className="block p-5 rounded-xl bg-[#151515] border border-[#292929] hover:border-[#B9A16B]/40 transition-all"
+              className="block p-5 rounded-xl bg-[#16253D] border border-[#1E2F4A] hover:border-[#2965B3]/40 transition-all"
             >
               <div className="flex flex-wrap items-center gap-2 mb-2">
-                <span className="text-xs px-2 py-0.5 rounded bg-[#1C1C1C] text-[#B9A16B] border border-[#292929]">
+                <span className="text-xs px-2 py-0.5 rounded bg-[#16253D] text-[#2965B3] border border-[#1E2F4A]">
                   {localizeCategory(doc.category, categoryMap[doc.category]?.title || doc.category, '', locale).title}
                 </span>
               </div>
-              <h2 className="font-medium text-[#F2F2F2] mb-1">{localizeDocumentMeta(doc.slug, doc.title, doc.shortTitle, doc.description, locale).title}</h2>
-              <p className="text-sm text-[#929292] line-clamp-2">{localizeDocumentMeta(doc.slug, doc.title, doc.shortTitle, doc.description, locale).description}</p>
-              <div className="mt-2 text-xs text-[#929292]">
+              <h2 className="font-medium text-[#F7F7F8] mb-1">{localizeDocumentMeta(doc.slug, doc.title, doc.shortTitle, doc.description, locale).title}</h2>
+              <p className="text-sm text-[#CACBD2] line-clamp-2">{localizeDocumentMeta(doc.slug, doc.title, doc.shortTitle, doc.description, locale).description}</p>
+              <div className="mt-2 text-xs text-[#CACBD2]">
                 {t("sections")}: {doc.sections.length} · {t("articles")}:{" "}
                 {doc.sections.reduce((acc, s) => acc + (s.articles?.length || 0), 0)}
               </div>
@@ -84,7 +84,7 @@ function DocumentsContent() {
 
 export default function DocumentsPage() {
   return (
-    <Suspense fallback={<div className="p-10 text-[#929292]">...</div>}>
+    <Suspense fallback={<div className="p-10 text-[#CACBD2]">...</div>}>
       <DocumentsContent />
     </Suspense>
   );
