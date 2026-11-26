@@ -38,7 +38,7 @@ export function Sidebar() {
     <>
       <div className="px-5 py-6 border-b border-[#1E2F4A]">
         <Link href="/" className="flex items-center gap-3 group" onClick={() => setOpen(false)}>
-          <div className="w-10 h-10 rounded-lg bg-[#16253D] border border-[#1E2F4A] overflow-hidden shrink-0">
+          <div className="logo-wrap w-10 h-10 rounded-lg bg-[#16253D] border border-[#1E2F4A] overflow-hidden shrink-0">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/logo.png" alt="NEVA Role Play" className="w-full h-full object-cover" />
           </div>
@@ -155,7 +155,7 @@ export function Sidebar() {
       )}
 
       <aside
-        className={`lg:hidden fixed inset-y-0 left-0 z-50 w-72 bg-[#122036] border-r border-[#1E2F4A] flex flex-col transform transition-transform duration-200 ${
+        className={`mobile-drawer lg:hidden fixed inset-y-0 left-0 z-50 w-72 bg-[#122036] border-r border-[#1E2F4A] flex flex-col transform ${
           open ? "translate-x-0" : "-translate-x-full"
         }`}
       >
