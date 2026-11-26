@@ -41,7 +41,7 @@ export const documentLocaleUk: Record<
   { title: string; shortTitle: string; description: string }
 > = {
   "server-rules": {
-    title: "Основні правила проєкту ONYX RP",
+    title: "Основні правила проєкту NEVA Role Play",
     shortTitle: "Правила сервера",
     description:
       "Правила спілкування, RP-терміни та покарання, зовнішній вигляд, правила для поліції, голосовий чат, піротехніка, зелена зона, викрадення, суд та інші спеціальні порушення.",

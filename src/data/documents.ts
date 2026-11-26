@@ -5,7 +5,7 @@ export const documents: LegalDocument[] = [
   {
     id: "server-rules",
     slug: "server-rules",
-    title: "Основные правила проекта ONYX RP",
+    title: "Основные правила проекта NEVA Role Play",
     shortTitle: "Правила сервера",
     category: "server_rules",
     description: "Правила общения, RP-термины и наказания, внешний вид, правила для полиции, голосовой чат, пиротехника, зелёная зона и другие специальные нарушения.",
