@@ -78,7 +78,7 @@ export default function HomePage() {
 
       <section className="max-w-5xl mx-auto px-6 py-8 border-t border-[#1E2F4A]">
         <h2 className="text-lg font-medium text-[#F7F7F8] mb-6">{t("popularDocs")}</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 stagger">
           {popular.map((doc) => (
             <Link
               key={doc.id}
