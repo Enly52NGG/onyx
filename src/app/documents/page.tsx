@@ -56,7 +56,7 @@ function DocumentsContent() {
           <p className="text-sm mt-2">{t("materialsMayBeAdded")}</p>
         </div>
       ) : (
-        <div className="space-y-3">
+        <div className="space-y-3 stagger">
           {filtered.map((doc) => (
             <Link
               key={doc.id}
