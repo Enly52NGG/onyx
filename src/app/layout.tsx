@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ONYX RP — Официальный правовой портал",
+  title: "NEVA Role Play — Официальный правовой портал",
   description:
-    "Официальный правовой портал проекта ONYX RP. Правила, кодексы, регламенты и нормативные документы.",
+    "Официальный правовой портал проекта NEVA Role Play. Правила, кодексы, регламенты и нормативные документы.",
   icons: {
     icon: "/logo.png",
   },
@@ -31,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="ru" className="dark">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#090909] text-[#F2F2F2]`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#0A1627] text-[#F7F7F8]`}
       >
         <I18nProvider>
           <div className="flex min-h-screen">
