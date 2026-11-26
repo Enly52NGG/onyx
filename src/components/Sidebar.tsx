@@ -38,9 +38,9 @@ export function Sidebar() {
     <>
       <div className="px-5 py-6 border-b border-[#292929]">
         <Link href="/" className="flex items-center gap-3 group" onClick={() => setOpen(false)}>
-          <div className="w-10 h-10 rounded-full bg-[#151515] border border-[#292929] overflow-hidden shrink-0">
+          <div className="w-10 h-10 rounded-lg bg-[#151515] border border-[#292929] overflow-hidden shrink-0">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/logo.png" alt="ONYX" className="w-full h-full object-cover rounded-full" />
+            <img src="/logo.png" alt="NEVA RP" className="w-full h-full object-cover" />
           </div>
           <div>
             <div className="font-semibold text-[#F2F2F2] tracking-wide group-hover:text-[#B9A16B] transition-colors">
