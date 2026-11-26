@@ -260,3 +260,115 @@ input[type="search"]:focus, input[type="text"]:focus {
 ::-webkit-scrollbar-thumb {
   transition: background var(--dur-fast) var(--ease-out);
 }
+
+/* ===== Liquid Glass (iOS-style) ===== */
+:root {
+  --glass-alpha: 0.55;
+  --glass-blur: 28px;
+  --glass-saturate: 180%;
+}
+
+/* Soft ambient background for glass to refract */
+body {
+  background:
+    radial-gradient(ellipse 80% 50% at 10% -10%, rgba(41, 101, 179, 0.35), transparent 50%),
+    radial-gradient(ellipse 60% 40% at 90% 0%, rgba(214, 165, 43, 0.12), transparent 45%),
+    radial-gradient(ellipse 50% 60% at 50% 100%, rgba(41, 101, 179, 0.2), transparent 50%),
+    #0A1627;
+  background-attachment: fixed;
+}
+
+/* Glass surfaces */
+.glass,
+aside,
+.glass-panel,
+a[class*="rounded-xl"],
+a[class*="rounded-lg"],
+.rounded-xl,
+.rounded-2xl {
+  background: rgba(18, 32, 54, var(--glass-alpha)) !important;
+  backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-saturate));
+  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-saturate));
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  box-shadow:
+    0 4px 24px rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+
+/* Sidebar stronger glass */
+aside {
+  background: rgba(10, 22, 39, calc(var(--glass-alpha) + 0.15)) !important;
+  border-right: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Gear button */
+.gear-btn {
+  background: rgba(18, 32, 54, var(--glass-alpha));
+  backdrop-filter: blur(20px) saturate(160%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #F7F7F8;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  transition: transform 240ms cubic-bezier(0.22, 1, 0.36, 1), box-shadow 240ms;
+}
+.gear-btn:hover {
+  transform: scale(1.06);
+  box-shadow: 0 6px 20px rgba(41, 101, 179, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+.gear-icon {
+  transition: transform 480ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.gear-btn:hover .gear-icon,
+.gear-open .gear-icon {
+  transform: rotate(90deg);
+}
+.gear-open {
+  background: rgba(41, 101, 179, 0.45) !important;
+}
+
+/* Panel appear */
+.glass-panel {
+  animation: panelIn 280ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+@keyframes panelIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Custom slider */
+.glass-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(41, 101, 179, 0.4), rgba(255, 255, 255, 0.25));
+  outline: none;
+}
+.glass-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #F7F7F8;
+  border: 2px solid #2965B3;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  transition: transform 160ms;
+}
+.glass-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+}
+.glass-slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #F7F7F8;
+  border: 2px solid #2965B3;
+  cursor: pointer;
+}
