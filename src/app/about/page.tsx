@@ -23,16 +23,16 @@ export default function AboutPage() {
 
   return (
     <div className="max-w-3xl mx-auto px-6 py-10 lg:py-14">
-      <h1 className="text-2xl font-semibold text-[#F2F2F2] mb-6">{t("aboutTitle")}</h1>
+      <h1 className="text-2xl font-semibold text-[#F7F7F8] mb-6">{t("aboutTitle")}</h1>
 
-      <div className="space-y-6 text-[#929292] text-sm leading-relaxed">
+      <div className="space-y-6 text-[#CACBD2] text-sm leading-relaxed">
         <section>
-          <h2 className="text-[#F2F2F2] font-medium mb-2">{t("aboutPurpose")}</h2>
+          <h2 className="text-[#F7F7F8] font-medium mb-2">{t("aboutPurpose")}</h2>
           <p>{t("aboutPurposeText")}</p>
         </section>
 
         <section>
-          <h2 className="text-[#F2F2F2] font-medium mb-2">{t("aboutPrinciples")}</h2>
+          <h2 className="text-[#F7F7F8] font-medium mb-2">{t("aboutPrinciples")}</h2>
           <ul className="list-disc pl-5 space-y-1">
             {principles.map((p, i) => (
               <li key={i}>{p}</li>
@@ -41,13 +41,13 @@ export default function AboutPage() {
         </section>
 
         <section>
-          <h2 className="text-[#F2F2F2] font-medium mb-2">{t("aboutVersion")}</h2>
+          <h2 className="text-[#F7F7F8] font-medium mb-2">{t("aboutVersion")}</h2>
           <p>{t("docBase")}</p>
         </section>
       </div>
 
       <div className="mt-10">
-        <Link href="/" className="text-[#B9A16B] hover:underline text-sm">
+        <Link href="/" className="text-[#2965B3] hover:underline text-sm">
           {t("backHome")}
         </Link>
       </div>
