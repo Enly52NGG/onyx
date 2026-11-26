@@ -25,7 +25,7 @@ const translations = {
     active: "Действует",
     importantNotice: "Важное уведомление",
     noticeText:
-      "Портал публикует правила и нормативные документы проекта ONYX RP. Документы могут обновляться администрацией.",
+      "Портал публикует правила и нормативные документы проекта NEVA Role Play. Документы могут обновляться администрацией.",
     lastUpdate: "Последнее обновление базы: на основе предоставленных исходных файлов. Версия каталога: 1.2",
     allDocuments: "Законодательство",
     catalogDescription:
@@ -49,7 +49,7 @@ const translations = {
     aboutTitle: "О правовом портале",
     aboutPurpose: "Назначение",
     aboutPurposeText:
-      "Официальный правовой портал проекта ONYX RP предназначен для публикации, систематизации и поиска правил, законов, кодексов и внутренних нормативных документов проекта.",
+      "Официальный правовой портал проекта NEVA Role Play предназначен для публикации, систематизации и поиска правил, законов, кодексов и внутренних нормативных документов проекта.",
     aboutPrinciples: "Принципы",
     aboutVersion: "Версия",
     backHome: "← На главную",
@@ -83,7 +83,7 @@ const translations = {
     active: "Чинний",
     importantNotice: "Важливе повідомлення",
     noticeText:
-      "Портал публікує правила та нормативні документи ONYX RP. Документи можуть оновлюватися. Актуальність окремих положень потребує перевірки адміністрацією. У разі виявлення суперечностей між джерелами вони позначаються для подальшого узгодження.",
+      "Портал публікує правила та нормативні документи NEVA Role Play. Документи можуть оновлюватися. Актуальність окремих положень потребує перевірки адміністрацією. У разі виявлення суперечностей між джерелами вони позначаються для подальшого узгодження.",
     lastUpdate: "Останнє оновлення бази: на основі наданих вихідних файлів. Версія каталогу: 1.0",
     allDocuments: "Законодавство",
     catalogDescription:
@@ -107,7 +107,7 @@ const translations = {
     aboutTitle: "Про правовий портал",
     aboutPurpose: "Призначення",
     aboutPurposeText:
-      "Офіційний правовий портал проєкту ONYX RP призначений для публікації, систематизації та пошуку правил, законів, кодексів та внутрішніх нормативних документів проєкту.",
+      "Офіційний правовий портал проєкту NEVA Role Play призначений для публікації, систематизації та пошуку правил, законів, кодексів та внутрішніх нормативних документів проєкту.",
     aboutPrinciples: "Принципи",
     aboutVersion: "Версія",
     backHome: "← На головну",
@@ -137,13 +137,13 @@ export function I18nProvider({ children }: { children: ReactNode }) {
   const [locale, setLocaleState] = useState<Locale>("ru");
 
   useEffect(() => {
-    const saved = localStorage.getItem("onyx-locale") as Locale | null;
+    const saved = localStorage.getItem("neva-locale") as Locale | null;
     if (saved === "ru" || saved === "uk") setLocaleState(saved);
   }, []);
 
   const setLocale = (l: Locale) => {
     setLocaleState(l);
-    localStorage.setItem("onyx-locale", l);
+    localStorage.setItem("neva-locale", l);
   };
 
   const t = (key: TranslationKey) => translations[locale][key] || translations.ru[key];
