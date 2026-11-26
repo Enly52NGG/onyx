@@ -17,7 +17,7 @@ export default function HomePage() {
         <div className="max-w-5xl mx-auto px-6 pt-16 pb-12 lg:pt-20 lg:pb-16">
           <div className="flex items-center gap-4 mb-6">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/logo.png" alt="ONYX" className="w-14 h-14 rounded-full object-cover border border-[#292929] shrink-0" />
+            <img src="/logo.png" alt="NEVA RP" className="w-14 h-14 rounded-lg object-cover border border-[#292929] shrink-0" />
             <div>
               <h1 className="text-3xl lg:text-4xl font-semibold tracking-tight text-[#F2F2F2]">
                 ONYX RP
