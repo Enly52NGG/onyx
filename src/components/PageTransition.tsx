@@ -1,28 +1,25 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export function PageTransition({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
-  const [key, setKey] = useState(pathname);
-  const [visible, setVisible] = useState(true);
+  const first = useRef(true);
+  const [animating, setAnimating] = useState(false);
 
   useEffect(() => {
-    if (pathname === key) return;
-    setVisible(false);
-    const t = setTimeout(() => {
-      setKey(pathname);
-      setVisible(true);
-    }, 180);
+    if (first.current) {
+      first.current = false;
+      return;
+    }
+    setAnimating(true);
+    const t = setTimeout(() => setAnimating(false), 560);
     return () => clearTimeout(t);
-  }, [pathname, key]);
+  }, [pathname]);
 
   return (
-    <div
-      key={key}
-      className={`page-transition ${visible ? "page-in" : "page-out"}`}
-    >
+    <div className={`page-transition${animating ? " page-in" : ""}`}>
       {children}
     </div>
   );
