@@ -598,9 +598,8 @@ export const documents: LegalDocument[] = [
             sanctions: `Бан: 1–3 дн. 🚫`
           }
         ],
-      }
-        ],
-      },      {
+      },
+      {
         id: "ch-13",
         number: "13",
         title: `Особые нарушения⚠️`,
