@@ -24,10 +24,9 @@ export function Sidebar() {
     { href: "/", label: t("home"), icon: IconHome, external: false },
     { href: "/documents/server-rules", label: t("projectRules"), icon: IconBook, external: false },
     { href: "/documents", label: t("legislation"), icon: IconFile, external: false },
-    { href: "/search", label: t("search"), icon: IconSearch, external: false },
     { href: "/about", label: t("about"), icon: IconInfo, external: false },
     {
-      href: "https://discord.gg/WJGhRMNxe3",
+      href: "https://discord.gg/j3Xz5ECN2G",
       label: t("discord"),
       icon: IconDiscord,
       external: true,
