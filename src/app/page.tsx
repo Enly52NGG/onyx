@@ -29,7 +29,7 @@ export default function HomePage() {
             {t("heroDescription")}
           </p>
 
-          <form action="/search" method="get" className="relative max-w-2xl">
+          <form action="/search" method="get" className="search-bar relative max-w-2xl">
             <IconSearch className="absolute left-4 top-1/2 -translate-y-1/2 text-[#CACBD2]" size={20} />
             <input
               type="search"

@@ -420,3 +420,23 @@ aside:hover, main:hover, .page-transition:hover, .glass-panel:hover {
 .gear-btn:hover {
   transform: scale(1.06);
 }
+
+/* Search bar: scale whole bar (icon + input) together, softer */
+.search-bar {
+  transition: transform 320ms cubic-bezier(0.22, 1, 0.36, 1);
+  transform-origin: center left;
+}
+.search-bar:hover {
+  transform: scale(1.015);
+}
+.search-bar input,
+.search-bar input:hover {
+  transform: none !important;
+}
+/* Don't let global input scale fight the bar */
+input[type="search"] {
+  transition: border-color 180ms ease, box-shadow 180ms ease;
+}
+input[type="search"]:hover {
+  transform: none !important;
+}
