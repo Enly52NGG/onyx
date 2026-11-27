@@ -17,7 +17,7 @@ function SearchContent() {
     <div className="max-w-3xl mx-auto px-6 py-10 lg:py-14">
       <h1 className="text-2xl font-semibold text-[#F7F7F8] mb-6">{t("searchTitle")}</h1>
 
-      <form action="/search" method="get" className="relative mb-8">
+      <form action="/search" method="get" className="search-bar relative mb-8">
         <IconSearch className="absolute left-4 top-1/2 -translate-y-1/2 text-[#CACBD2]" size={20} />
         <input
           type="search"
