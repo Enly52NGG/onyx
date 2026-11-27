@@ -399,3 +399,24 @@ aside {
 .page-in h1, .page-in h2 {
   animation: itemIn 480ms cubic-bezier(0.22, 1, 0.36, 1) both;
 }
+
+/* ===== Soft hover scale (whole site) ===== */
+a, button, [role="button"], .rounded-xl, .rounded-lg, .rounded-2xl, input[type="submit"] {
+  transition:
+    transform 220ms cubic-bezier(0.22, 1, 0.36, 1),
+    background-color 180ms ease,
+    border-color 180ms ease,
+    box-shadow 220ms ease,
+    color 180ms ease;
+}
+a:hover, button:hover, [role="button"]:hover, .rounded-xl:hover, .rounded-lg:hover, .rounded-2xl:hover {
+  transform: scale(1.025);
+}
+/* Don't scale the whole sidebar or main layout */
+aside:hover, main:hover, .page-transition:hover, .glass-panel:hover {
+  transform: none;
+}
+/* Gear keeps its own animation */
+.gear-btn:hover {
+  transform: scale(1.06);
+}
